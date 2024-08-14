@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Print') {
+            steps {
+                echo 'Hello Mini'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Hello Arya'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Hello Vanya'
+            }
+        }
+    }
+}
